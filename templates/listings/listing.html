@@ -42,7 +42,19 @@
                 <img src="{{listing.photo_main.url}}" alt="" class="img-main img-fluid mb-3">
                 <!-- Thumbnails -->
                 <div class="row mb-5 thumbs">
-                    <!-- with index=forloop.counter0 -->
+                    <!-- 
+                    {%for key,value in bedroom_choices.items %}
+                    {{key}}
+                    {%if listing.photo_key%}
+                    <div class="col-md-2">
+                        <a href="{{listing.photo_key.url}}" data-lightbox="home-images">
+                            <img src="{{listing.photo_key.url}}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    {%endif%}
+                    {%endfor%}-->
+
+                    <!-- teste  -->
                     {%if listing.photo_1%}
                     <div class="col-md-2">
                         <a href="{{listing.photo_1.url}}" data-lightbox="home-images">
